@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sticky Navbar Test</title>
+  <style>
+    /* Reset and Box-Sizing */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Sticky Navbar */
+    nav {
+      position: sticky;
+      top: 0; /* Stick to top */
+      background-color: red;
+      padding: 1rem;
+      z-index: 1000; /* Ensure it’s above other content */
+    }
+
+    ul{
+        list-style: none;
+        display: flex;
+        gap: 1rem;
+    }
+
+    li a{
+        text-decoration: none;
+    }
+
+    /* Section Styling */
+    section {
+        /*
+      height: 100vh; /* Full viewport height */
+      padding: 300px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 2rem;
+      border: 1px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <ul>
+        <li><a href="#section1">Section 1</a></li>
+        <li><a href="#section2">Section 2</a></li>
+        <li><a href="#section3">Section 3</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="section1">Section 1</section>
+    <section id="section2">Section 2</section>
+    <section id="section3">Section 3</section>
+  </main>
+</body>
+</html>
